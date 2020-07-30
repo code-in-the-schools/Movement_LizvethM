@@ -28,7 +28,7 @@ class Character(object):
     if key[pygame.k_LEFT]:
       self.x += 1
     if key[pygame.k_Right]:
-      self.x -=1
+      self.x -=1 
       
 
 
