@@ -18,7 +18,7 @@ class Character(object):
   def draw(self, surface):
     surface.blit(self.image,(self.x,self.y))
 
-
+  def movement()
 
 
 
@@ -43,7 +43,4 @@ while running:
   pygame.display.update()
   clock.tick(60)
 
-    if event.type == pygame.KEYDOWN:
-      if event.key== pygame.K_LEFT or event == ord("a"):
-        print('left')
 
