@@ -18,8 +18,18 @@ class Character(object):
   def draw(self, surface):
     surface.blit(self.image,(self.x,self.y))
 
-  def movement()
+  def movement(self):
+    key = pygame.key.get_pressed()
 
+    if key[pygame.k_DOWN]:
+      self.y -= 1
+    if key[pygame.k_UP]:
+      self.y += 1
+    if key[pygame.k_LEFT]:
+      self.x += 1
+    if key[pygame.k_Right]:
+      self.x -=1
+      
 
 
 pygame.init()
@@ -39,8 +49,13 @@ while running:
       running= False
 
   screen.fill((255,255,255))
+
+  Character.movement(sprite)
+
   sprite.draw(screen)
+
   pygame.display.update()
+  
   clock.tick(60)
 
 
